@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body id="Home">
+    <header class="header">
+      <img src="./assets/Logo.png" alt="logo" class="logo" />
+      <div class="nav-container">
+        <nav class="nav">
+          <ul class="ul">
+            <li class="nav-links"><a href="#Home">Home</a></li>
+            <li class="nav-links"><a href="#Search">Search</a></li>
+            <li class="nav-links"><a href="#Tasks">Tasks</a></li>
+          </ul>
+        </nav>
+        <button class="drmd-btn">
+          <img
+            src="./assets/night-mode (1).png"
+            alt="night-mode-icon"
+            class="drmd-img"
+          />
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="add-section">
+        <div class="heading">Add a new task</div>
+        <span class="inputbox">
+          <input type="text" class="addTsk" placeholder="Enter the task..." />
+          <button class="add-btn">+</button>
+        </span>
+        <div class="recently-added-container"></div>
+      </section>
+
+      <section class="search-section" id="Search">
+        <div class="heading">Search box</div>
+        <span class="inputbox">
+          <input
+            type="text"
+            class="addTsk searchTsk"
+            placeholder="Search tasks..."
+          />
+          <button class="srch-btn">🔍︎</button>
+        </span>
+        <div class="searched"></div>
+      </section>
+
+      <section class="tasks" id="Tasks">
+        <div class="heading">Your tasks</div>
+        <ul class="task-list"></ul>
+        <div class="task-foot">
+          <span class="tasks-counter"></span>
+          <span class="clearAll">
+            <button class="clear-btn">
+              <strong>🧹</strong>Clear all tasks
+            </button>
+          </span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <ul class="foot-list">
+        <li class="foot-links">
+          <a href="https://www.privacypolicies.com">Privacy policy</a>
+        </li>
+        <li class="foot-links"><a href="https://www.aboutus.com">About</a></li>
+        <li class="foot-links">
+          <a href="https://www.disclaimers.com">Disclaimers</a>
+        </li>
+        <li class="foot-links">
+          <a href="https://www.contactus.com">Contact</a>
+        </li>
+        <li class="foot-links">
+          <a href="https://www.feedback.com">Feedback</a>
+        </li>
+      </ul>
+
+      <div class="cc">
+        <p class="foot-desc">
+          Copyright &copy; 2024 Task Manager. All rights reserved.
+        </p>
+        <ul class="foot-ul">
+          <li class="foot-li">
+            <a href="https://facebook.com" target="_blank"
+              ><img src="./assets/facebook.png" alt="Facebook"
+            /></a>
+          </li>
+          <li class="foot-li">
+            <a href="https://twitter.com" target="_blank">
+              <img src="./assets/twitter.png" alt="Twitter"
+            /></a>
+          </li>
+          <li class="foot-li">
+            <a href="https://instagram.com" target="_blank">
+              <img src="./assets/instagram.png" alt="Instagram"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

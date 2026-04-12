@@ -1,0 +1,1009 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .content {
+        font-size: 17px;
+      }
+      #body{
+        line-height: 1.3;
+      }
+       #body a{
+        text-decoration: none;
+        color: #36c;
+      }
+      #table1 th {
+        text-align: left;
+        vertical-align: top;
+        width: 28%;
+      }
+      #table1 td {
+        padding-right: 0px;
+        
+      }
+      #hero p {
+        font-size: 17px;
+      }
+      #body {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      #table2{
+          border-collapse:collapse;
+      }
+      #table2 th, #table2 td{
+      
+        border: 1px solid rgb(175, 173, 173);
+        background-color: #f8f9fa;
+        padding: 7px;
+        font-size: 17px;
+        line-height: 1.4;
+      }
+      #body p, table,ul,div{
+        font-family: sans-serif;
+      }
+      footer{
+        margin-left: 20px;
+        margin-right: 20px;
+        font-family: sans-serif;
+        font-size: 12px;
+      }
+
+      #footer-links li a{
+        text-decoration: none;
+        color: #36c;
+      }
+      #footer-links li{
+        list-style: none;
+        float: left;
+        margin-right: 1em;
+        line-height: 2;
+        margin-top: 20px;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      style="display: flex; justify-content: space-between; margin-top: 15px"
+    >
+      <nav style="display: flex; gap: 30px; margin-left: 10px">
+        <button style="border: none; background: none; font-size: 22px">
+          ☰
+        </button>
+        <div>
+          <img
+            src="https://en.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-en-25.svg"
+            alt="Wikipedia Logo"
+          />
+          <div style="font-size: 10px">25 years of the free encyclopedia</div>
+        </div>
+      </nav>
+      <nav
+        style="
+          display: flex;
+          gap: 15px;
+          align-items: center;
+          margin-right: 20px;
+        "
+      >
+        <button style="border: none; background: none; font-size: 20px">
+          🔍︎
+        </button>
+        <button style="border: none; background: none; font-size: 18px">
+          ⚯
+        </button>
+        <a href="" style="font-size: 15px; text-decoration: none">Donate</a>
+        <a href="" style="font-size: 15px; text-decoration: none"
+          >Create Account</a
+        >
+        <a href="" style="font-size: 15px; text-decoration: none">LogIn</a>
+      </nav>
+    </header>
+
+    <main id="body">
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          margin-top: 45px;
+          align-items: center;
+        "
+      >
+        <div style="display: flex; gap: 20px">
+          <button
+            style="
+              border: none;
+              background: none;
+              font-size: 18px;
+              font-weight: bold;
+            "
+          >
+            ⫶☰
+          </button>
+          <div style="font-size: 28px;font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif 4', serif;">Linus Torvalds</div>
+        </div>
+        <div>
+          <select
+            name="languages"
+            id="languages"
+            style="
+              font-size: 15px;
+              border: none;
+              color: rgb(40, 40, 255);
+              font-weight: bold;
+              padding: 6px;
+            "
+          >
+            <option value="120 languages">120 languages</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="subsubhead">
+        <hr />
+        <div style="display: flex; justify-content: space-between">
+          <nav style="display: flex; gap: 20px">
+            <a href="" style="text-decoration: none; font-size: 15px"
+              >Article</a
+            >
+            <a href="" style="text-decoration: none; font-size: 15px">Talk</a>
+          </nav>
+          <nav style="display: flex; gap: 18px">
+            <a href="" style="text-decoration: none; font-size: 15px">Read</a>
+            <a href="" style="text-decoration: none; font-size: 15px">Edit</a>
+            <a href="" style="text-decoration: none; font-size: 15px"
+              >View history</a
+            >
+            <select
+              style="border: none; font-size: 15px"
+              name="Tools"
+              id="Tools"
+            >
+              <option value="Tools">Tools</option>
+            </select>
+          </nav>
+        </div>
+        <hr />
+      </div>
+
+      <div id="hero-heading" style="margin-bottom: 15px">
+        From Wikipedia, the free encyclopedia
+      </div>
+
+      <div id="hero">
+        <div
+          id="box"
+          style="
+            border: 1px solid #afadad;;
+            width: 20em;
+            height: px;
+            background-color: #f8f9fa;
+            float: right;
+            clear: right;
+            margin-left: 20px;
+          "
+        >
+          <div style="text-align: center; font-size: 22px">Linus Torvalds</div>
+          <div>
+            <img
+              src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Lc3_2018_%28263682303%29_%28cropped%29.jpeg/250px-Lc3_2018_%28263682303%29_%28cropped%29.jpeg"
+              decoding="async"
+              width="250"
+              height="341"
+              srcset="
+                //upload.wikimedia.org/wikipedia/commons/e/e8/Lc3_2018_%28263682303%29_%28cropped%29.jpeg 1.5x
+              "
+              data-file-width="476"
+              data-file-height="650"
+              style="margin-left: 2em"
+            />
+            <figcaption style="text-align: center">Torvalds in 2018</figcaption>
+          </div>
+          <div style="width: 100%; margin-top: 10px">
+            <table id="table1">
+              <tr>
+                <th>Full Name</th>
+                <td>Linus Benedict Torvalds</td>
+              </tr>
+              <tr>
+                <th>Born</th>
+                <td>28 December 1969 (age 56) Helsinki, Finland</td>
+              </tr>
+              <tr>
+                <th>Citizenship</th>
+                <td>Finland, United States</td>
+              </tr>
+              <tr>
+                <th>Alma mater</th>
+                <td>University of Helsinki (M.S.)</td>
+              </tr>
+              <tr>
+                <th>Occupation</th>
+                <td>Software engineer</td>
+              </tr>
+              <tr>
+                <th>Employer</th>
+                <td>Linux Foundation</td>
+              </tr>
+              <tr>
+                <th>Known for</th>
+                <td>Linux, Git</td>
+              </tr>
+              <tr>
+                <th>Spouse</th>
+                <td>Tove Torvalds</td>
+              </tr>
+              <tr>
+                <th>Children</th>
+                <td>3</td>
+              </tr>
+              <tr>
+                <th>Parent(s)</th>
+                <td>
+                  Nils Torvalds (father)
+                  <br />
+                  Anna "Mikke" Torvalds
+                  <br />
+                  (née Törnqvist, mother)
+                </td>
+              </tr>
+              <tr>
+                <th>Relatives</th>
+                <td>
+                  Sara Torvalds (sister)
+                  <br />
+                  Leo Törnqvist (grandfather)
+                  <br />
+                  Ole Torvalds (grandfather)
+                </td>
+              </tr>
+            </table>
+            <div>
+              <hr style="margin-left: 10px; margin-right: 10px" />
+              <div style="text-align: center">Linus Torvalds's voice</div>
+              <audio src="" controls style="margin-left: 10px"></audio>
+              <div style="text-align: center">Published in 1994</div>
+            </div>
+          </div>
+        </div>
+
+        <p>
+          <strong>Linus Benedict Torvalds</strong>(born 28 December 1969) is a
+          Finnish and American software engineer who is the creator and lead
+          developer of the Linux kernel since 1991. He also created the
+          distributed version control system Git.
+        </p>
+
+        <p>
+          Torvalds was one of the recipients of the 2012 Millennium Technology
+          Prize "in recognition of his creation of a new open source operating
+          system for computers leading to the widely used Linux kernel". He is
+          also the recipient of the 2014 IEEE Computer Society Computer Pioneer
+          Award and the 2018 IEEE Masaru Ibuka Consumer Electronics Award.
+        </p>
+
+        <p style="font-size: 25px; margin-bottom: 1px;font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif 4', serif;">Life and career</p>
+        <hr />
+        <p style="font-size: 20px"><strong>Early years</strong></p>
+        <p>
+          Torvalds was born in Helsinki, Finland, on 28 December 1969, the son
+          of journalists Anna and Nils Torvalds, the grandson of statistician
+          Leo Törnqvist and of poet Ole Torvalds, and the great-grandson of
+          journalist and soldier Toivo Karanko. His parents were campus radicals
+          at the University of Helsinki in the 1960s. His family belongs to the
+          Swedish-speaking minority in Finland. He was named after Linus
+          Pauling, the Nobel Prize-winning American chemist, although in the
+          book Rebel Code: Linux and the Open Source Revolution, he is quoted as
+          saying, "I think I was named equally for Linus the Peanuts cartoon
+          character", noting that this made him "half Nobel Prize–winning
+          chemist and half blanket-carrying cartoon character".
+        </p>
+        <p>
+          His interest in computers began with a VIC-20 at the age of 11 in
+          1981. He started programming for it in BASIC, then later by directly
+          accessing the 6502 CPU directly in machine code (rather than assembly
+          language). He then purchased a Sinclair QL, which he modified
+          extensively, especially its operating system. "Because it was so hard
+          to get software for it in Finland", he wrote his own assembler and
+          "(in addition to Pac-Man graphics libraries)" for the QL, and a few
+          games. He wrote a Pac-Man clone, Cool Man.
+        </p>
+        <p>
+          Torvalds attended the University of Helsinki from 1988 to 1996,
+          graduating with a master's degree in computer science from the NODES
+          research group. His academic career was interrupted after his first
+          year of study when he joined the Finnish Navy Nyland Brigade in the
+          summer of 1989, selecting the 11-month officer training program to
+          fulfill the mandatory military service of Finland. He gained the rank
+          of second lieutenant, with the role of an artillery observer.
+        </p>
+        <p>
+          In 1990, Torvalds resumed his university studies, and was exposed to
+          Unix for the first time in the form of a DEC MicroVAX running ULTRIX.
+          Later, he bought computer science professor Andrew Tanenbaum's book
+          Operating Systems: Design and Implementation, in which Tanenbaum
+          describes MINIX, an educational stripped-down version of Unix.
+        </p>
+        <p>
+          On 5 January 1991 he purchased an Intel 80386-based IBM PC clone
+          before receiving a copy of MINIX, which in turn enabled him to begin
+          work on Linux.
+        </p>
+        <p style="font-size:20px"><strong >Linux</strong></p>
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em
+            >Main article: <a href="">History of Linux</a></em
+          >
+        </p>
+        <p>
+          The first Linux prototypes were publicly released on the Internet in
+          late 1991 from an FTP server at his university. Version 1.0 was
+          released on 14 March 1994.
+        </p>
+        <p>
+          Torvalds first encountered the GNU Project in the autumn of 1991 when
+          another Swedish-speaking computer science student, Lars Wirzenius,
+          took him to the Helsinki University of Technology to listen to
+          free-software guru Richard Stallman's speech. Because of the talk and
+          pressure from other contributors, Torvalds would ultimately switch his
+          original license (which forbade commercial use) to Stallman's GNU
+          General Public License version 2 (GPLv2) for his Linux kernel.
+        </p>
+        <p>
+          After a visit to Transmeta in late 1996,[24] Torvalds accepted a
+          position at the company in California, where he worked from February
+          1997 to June 2003. He then moved to the Open Source Development Labs,
+          which has since merged with the Free Standards Group to become the
+          Linux Foundation, under whose auspices he continues to work. In June
+          2004, Torvalds and his family moved to Dunthorpe, Oregon to be closer
+          to the OSDL's headquarters in Beaverton.
+        </p>
+        <p>
+          From 1997 to 1999, he was involved in 86open, helping select the
+          standard binary format for Linux and Unix. In 1999, he was named by
+          the MIT Technology Review TR100 as one of the world's top 100
+          innovators under age 35.
+        </p>
+        <p>
+          In 1999, Red Hat and VA Linux, both leading developers of Linux-based
+          software, presented Torvalds with stock options in gratitude for his
+          creation. That year both companies went public and Torvalds's share
+          value briefly shot up to about US$20 million.
+        </p>
+        <p>
+          His personal mascot is a penguin nicknamed Tux, which has been widely
+          adopted by the Linux community as the Linux kernel's mascot.
+        </p>
+        <p>
+          Although Torvalds believes "open source is the only right way to do
+          software", he also has said that he uses the "best tool for the job",
+          even if that includes proprietary software. He was criticized for his
+          use and alleged advocacy of the proprietary BitKeeper software for
+          version control in the Linux kernel. He subsequently wrote a
+          free-software replacement for it called Git.
+        </p>
+        <p>
+          In 2000, the CEO of Apple Steve Jobs, proposed to Linus to work on
+          macOS, requiring him to stop his work on the Linux kernel. Linus
+          refused, also arguing that the Mach kernel was too different from
+          Linux.
+        </p>
+        <p>
+          In 2008, Torvalds stated that he used the Fedora Linux distribution
+          because it had fairly good support for the PowerPC processor
+          architecture, which he favored at the time. He confirmed this in a
+          2012 interview. Torvalds abandoned GNOME for a while after the release
+          of GNOME 3.0, saying, "The developers have apparently decided that
+          it's 'too complicated' to actually do real work on your desktop, and
+          have decided to make it really annoying to do". He then switched to
+          Xfce. In 2013, Torvalds resumed using GNOME, noting that "they have
+          extensions now that are still much too hard to find; but with
+          extensions you can make your desktop look almost as good as it used to
+          look two years ago".
+        </p>
+        <p>
+          The Linux Foundation currently sponsors Torvalds so he can work
+          full-time on improving Linux.
+        </p>
+        <p>
+          In 2012, while giving a talk at Aalto University, Torvalds said "fuck
+          you" and raised his middle finger after criticizing the company
+          Nvidia, which specializes in GPU technology. He said Nvidia was, at
+          the time, the single worst company he has dealt with in the
+          development of the kernel. In the talk, he also discussed other
+          elements of computing.
+        </p>
+        <p>
+          Torvalds is known for vocally disagreeing with other developers on the
+          Linux kernel mailing list. Calling himself a "really unpleasant
+          person", he explained, "I'd like to be a nice person and curse less
+          and encourage people to grow rather than telling them they are idiots.
+          I'm sorry—I tried, it's just not in me." His attitude, which he
+          considers necessary for making his points clear, has drawn criticism
+          from Intel programmer Sage Sharp and systemd developer Lennart
+          Poettering, among others.[failed verification]
+        </p>
+        <p>
+          On Sunday, 16 September 2018, the Linux kernel Code of Conflict was
+          suddenly replaced by a new Code of Conduct based on the Contributor
+          Covenant. Shortly thereafter, in the release notes for Linux 4.19-rc4,
+          Torvalds apologized for his behavior, calling his personal attacks of
+          the past "unprofessional and uncalled for" and announced a period of
+          "time off" to "get some assistance on how to understand people's
+          emotions and respond appropriately". It soon transpired that these
+          events followed The New Yorker approaching Torvalds with a series of
+          questions critical of his conduct. Following the release of Linux 4.19
+          on 22 October 2018, Torvalds returned to maintaining the kernel.
+        </p>
+        <p>
+          In 2024, amidst the Russian invasion of Ukraine, some developers were
+          excluded from the list of Linux kernel maintainers, seemingly over
+          being Russian or using Russian email addresses. Torvalds commented:
+          "I'm Finnish. Did you think I'd be supporting Russian aggression?".
+          Some developers, along with a part of Linux users, noted the lack of
+          public clarity about that move. Later Torvalds claimed that he acted
+          according to government compliance requirements and due to legal
+          issues around Russia.
+        </p>
+        <p style="font-size: 20px">
+          <strong>The Linus/Linux connection</strong>
+        </p>
+        <p>
+          <em>Main article: <a href=""> History of Linux § Naming</a></em>
+        </p>
+        <p>
+          Initially, Torvalds wanted to call the kernel he developed Freax (a
+          combination of "free", "freak", and the letter X to indicate that it
+          was a Unix-like system), but his friend Ari Lemmke, who administered
+          the FTP server where the kernel was first hosted, named Torvalds'
+          directory linux.
+        </p>
+        <p style="font-size: 25px; margin-bottom: 1px;font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif 4', serif;">
+          Authority and trademark
+        </p>
+        <hr style="margin-top: 0px" />
+        <p>
+          As of 2006, approximately 2% of the Linux kernel was written by
+          Torvalds. Despite the thousands who have contributed to it, his
+          percentage is still one of the largest. However, he said in 2012 that
+          his own personal contribution is now mostly merging code written by
+          others, with little programming. He retains the highest authority to
+          decide which new code is incorporated into the standard Linux kernel.
+        </p>
+        <p>
+          Torvalds holds the Linux trademark and monitors its use, chiefly
+          through the Linux Mark Institute.
+        </p>
+        <p style="font-size: 25px; margin-bottom: 1px;font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif 4', serif;">Other software</p>
+        <hr style="margin-top: 0px" />
+        <p style="font-size: 23px"><strong>Git</strong></p>
+        <p>
+          <em>See also:<a href="">Git § History</a></em>
+        </p>
+        <p>
+          On 3 April 2005, Torvalds began development on Git, version control
+          software that later became widely used.
+        </p>
+        <p style="font-size: 20px"><strong>Subsurface</strong></p>
+        <p>
+          Subsurface is software for logging and planning scuba dives, which
+          Torvalds began developing in late 2011. It is free and open source
+          software distributed under the terms of the GNU General Public License
+          version 2. Dirk Hohndel became its head maintainer in late 2012.
+        </p>
+        <p style="font-size: 20px"><strong>Sparse</strong></p>
+        <p>
+          <em>Main article:<a href="">Sparse</a></em>
+        </p>
+        <p>
+          Sparse is a static analysis tool that flags constructs that are likely
+          to be of interest to kernel developers, such as the mixing of pointers
+          to user and kernel address spaces.
+        </p>
+        <p style="font-size: 25px; margin-bottom: 1px;font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif 4', serif;">Personal life</p>
+        <hr style="margin-top: 0px" />
+        <p>
+          <figure
+            style="
+              width: 200px;
+              float: inline-end;
+              margin: 20px;
+              padding: 10px;
+              border: 1px solid black;
+            "
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Linus_Torvalds.jpeg/330px-Linus_Torvalds.jpeg"
+              alt="Torvalds in 2002"
+              style="width: 180px; padding: 5px"
+            />
+            <figcaption style="font-size: 18px">Torvalds in 2002</figcaption>
+          </figure>
+          Linus Torvalds is married to Tove Torvalds (née Monni), a six-time
+          Finnish national karate champion, whom he met in late 1993. He was
+          running introductory computer laboratory exercises for students and
+          instructed the course attendees to send him an e-mail as a test, to
+          which Tove responded with an e-mail asking for a date. They were later
+          married and have three daughters, two of whom were born in the United
+          States. The Linux kernel's reboot system call accepts their dates of
+          birth (written in hexadecimal) as magic values.
+        </p>
+        <p>
+          Torvalds has described himself as "completely a-religious—atheist",
+          adding, "I find that people seem to think religion brings morals and
+          appreciation of nature. I actually think it detracts from both. It
+          gives people the excuse to say, 'Oh, nature was just created,' and so
+          the act of creation is seen to be something miraculous. I appreciate
+          the fact that, 'Wow, it's incredible that something like this could
+          have happened in the first place.'" He later added that while in
+          Europe religion is mostly a personal issue, in the United States it
+          has become very politicized. When discussing the issue of church and
+          state separation, he said, "Yeah, it's kind of ironic that in many
+          European countries, there is actually a kind of legal binding between
+          the state and the state religion." In "Linus the Liberator", a story
+          about the March LinuxWorld Conference, Torvalds says: "There are like
+          two golden rules in life. One is 'Do unto others as you would want
+          them to do unto you.' For some reason, people associate this with
+          Christianity. I'm not a Christian. I'm agnostic. The other rule is 'Be
+          proud of what you do.'"
+        </p>
+        <p>
+          In 2004, Torvalds moved with his family from Silicon Valley to
+          Portland, Oregon.
+        </p>
+        <p>
+          In 2010, Torvalds became a United States citizen and registered to
+          vote in the United States. As of that year, he was unaffiliated with
+          any U.S. political party, saying, "I have way too much personal pride
+          to want to be associated with any of them, quite frankly.
+        </p>
+        <p>
+          Linus developed an interest in scuba diving in the early 2000s and has
+          achieved numerous certifications, leading him to create the Subsurface
+          project.
+        </p>
+        <p style="font-size: 25px; margin-bottom: 1px;font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif 4', serif;">
+          Awards and achievements
+        </p>
+        <hr style="margin-top: 0px" />
+        <div id="awards">
+         
+
+          <div id="card2" style="border: 1px solid black; width: 255px; float: right;clear: right;margin-left: 20px;background-color: #f8f9fa;">
+
+            <figure style="display: table;margin-left: 2px;margin-top: 2px;">
+              <img src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Linus-Torvalds_IEEE_Ibuka_Award_2018.jpg/250px-Linus-Torvalds_IEEE_Ibuka_Award_2018.jpg" decoding="async" width="250" height="157" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Linus-Torvalds_IEEE_Ibuka_Award_2018.jpg/500px-Linus-Torvalds_IEEE_Ibuka_Award_2018.jpg 1.5x" data-file-width="5272" data-file-height="3304">
+              <figcaption style="display: table-caption;caption-side: bottom;">
+                Linus Torvalds (centre) receiving the 2018 IEEE Masaru Ibuka Consumer Electronics Award from ICCE 2018 Conference Chair Saraju Mohanty (left) and IEEE President James A. Jefferies (right) at ICCE 2018 on 12 January 2018 in Las Vegas
+              </figcaption>
+            </figure>
+          </div>
+
+          <table border="1" id="table2">
+             <p style="font-size: large; text-align: center;margin-bottom: 0;"><strong>Awards and achievements</strong></p>
+            <tr>
+              <th style="background-color: #eaecf0;">Year</th>
+              <th style="background-color: #eaecf0;">Award</th>
+              <th style="background-color: #eaecf0;">Notes</th>
+            </tr>
+            <tr>
+              <td>2019</td>
+              <td>Great Immigrants Award</td>
+              <td>The Carnegie Corporation of New York honored Torvalds</td>
+            </tr>
+            <tr>
+              <td>2018</td>
+              <td>IEEE Masaru Ibuka Consumer Electronics Award</td>
+              <td>
+                IEEE Masaru Ibuka Consumer Electronics Award is conferred by the
+                Institute of Electrical and Electronics Engineers for
+                outstanding contributions to consumer electronics technology has
+                been named in honor of the co-founder and honorary chairman of
+                Sony Corporation, Masaru Ibuka. 2018 Ibuka award was conferred
+                to Linus Torvalds "For his leadership of the development and
+                proliferation of Linux.
+              </td>
+            </tr>
+            <tr>
+              <td>2014</td>
+              <td>IEEE Computer Pioneer Award</td>
+              <td>
+                On 23 April 2014, the Institute of Electrical and Electronics
+                Engineers named Torvalds as the 2014 recipient of the IEEE
+                Computer Society's Computer Pioneer Award. The Computer Pioneer
+                Award was established in 1981 by the IEEE Computer Society Board
+                of Governors to recognize and honor the vision of those whose
+                efforts resulted in the creation and continued vitality of the
+                computer industry. The award is presented to outstanding
+                individuals whose main contribution to the concepts and
+                development of the computer field was made at least 15 years
+                earlier.
+              </td>
+            </tr>
+            <tr>
+              <td>2012</td>
+              <td>Internet Hall of Fame</td>
+              <td>
+                On 23 April 2012, at Internet Society's Global INET conference
+                in Geneva, Switzerland, Torvalds was one of the inaugural
+                inductees into the Internet Hall of Fame, one of ten in the
+                Innovators category and thirty-three overall inductees.
+              </td>
+            </tr>
+            <tr>
+              <td>2012</td>
+              <td>Millennium Technology Prize</td>
+              <td>
+                On 20 April 2012, Torvalds was declared one of two winners of
+                that year's Millennium Technology Prize, along with Shinya
+                Yamanaka. The honor is widely described as technology's
+                equivalent of the Nobel Prize.
+              </td>
+            </tr>
+            <tr>
+              <td>2010</td>
+              <td>C&C Prize</td>
+              <td>
+                He was awarded the C&C Prize by the NEC Corporation in 2010 for
+                "contributions to the advancement of the information technology
+                industry, education, research, and the improvement of our
+                lives".
+              </td>
+            </tr>
+            <tr>
+              <td>2008</td>
+              <td>Hall of Fellows</td>
+              <td>
+                In 2008, he was inducted into the Hall of Fellows of the
+                Computer History Museum in Mountain View, California, "for the
+                creation of the Linux kernel and the management of open source
+                development of the widely used Linux operating system.
+              </td>
+            </tr>
+            <tr>
+              <td>2005</td>
+              <td>Vollum Award</td>
+              <td>
+                In August 2005, Torvalds received the Vollum Award from Reed
+                College.
+              </td>
+            </tr>
+            <tr>
+              <td>2003</td>
+              <td>Linus (Moon)</td>
+              <td>
+                In 2003, the naming of the asteroid moon Linus was motivated in
+                part by the fact that the discoverer was an enthusiastic Linux
+                user. Although the naming proposal referred to the mythological
+                Linus, son of the muse Calliope and the inventor of melody and
+                rhythm, the name was also meant to honor Linus Torvalds, and
+                Linus van Pelt, a character in the Peanuts comic strip.
+              </td>
+            </tr>
+            <tr>
+              <td>2001</td>
+              <td>Takeda Award</td>
+              <td>
+                In 2001, he shared the Takeda Award for Social/Economic
+                Well-Being with Richard Stallman and Ken Sakamura.
+              </td>
+            </tr>
+            <tr>
+              <td>2000</td>
+              <td>Lovelace Medal</td>
+              <td>
+                In 2000, he was awarded the Lovelace Medal from the British
+                Computer Society.
+              </td>
+            </tr>
+            <tr>
+              <td>1998</td>
+              <td>EFF Pioneer Award</td>
+              <td>In 1998, Torvalds received an EFF Pioneer Award.</td>
+            </tr>
+            <tr>
+              <td>1997</td>
+              <td>Academic Honors</td>
+              <td>
+                In 1997, Torvalds received his master's degree (Laudatur Grade)
+                from the Department of Computer Science at the University of
+                Helsinki. Two years later he received honorary doctor status at
+                Stockholm University, and in 2000, he received the same honor
+                from his alma mater. University of Helsinki has named an
+                auditorium after Torvalds and his computer is on display at the
+                Department of Computer Science.
+              </td>
+            </tr>
+            <tr>
+              <td>1996</td>
+              <td>9793 Torvalds (Asteroid)</td>
+              <td>
+                Torvalds (Asteroid) In 1996, the asteroid 9793 Torvalds was
+                named after him.
+              </td>
+            </tr>
+          </table>
+
+
+
+
+
+
+        </div>
+        <p style="font-size: 25px; margin-bottom: 1px;font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif 4', serif;">Media recognition</p>
+          <hr style="margin-top: 1px;">
+          <p><em><a href="">Time magazine</a></em> has recognized Torvalds multiple times:</p>
+          <p>
+            <ul style="padding-left: 20px;">
+            <li style="font-size: 17px;">In 2000, he was 17th in their Time 100: The Most Important People of the Century poll.</li>
+            <li style="font-size: 17px;">In 2004, he was named one of the most influential people in the world by Time magazine.</li>
+            <li style="font-size: 17px;">In 2006, the magazine's Europe edition named him one of the revolutionary heroes of the past 60 years.</li>
+            </ul>
+          </p>
+          <p>InfoWorld presented him with the 2000 Award for Industry Achievement. In 2005, Torvalds appeared as one of "the best managers" in a survey by BusinessWeek.[84] In 2006, Business 2.0 magazine named him one of "10 people who don't matter" because the growth of Linux has shrunk Torvalds's individual impact.</p>
+          <p>In summer 2004, viewers of YLE (the Finnish Broadcasting Company) placed Torvalds 16th in the network's 100 Greatest Finns. In 2010, as part of a series called The Britannica Guide to the World's Most Influential People, Torvalds was listed among The 100 Most Influential Inventors of All Time (ISBN 9781615300037).</p>
+          <p>On 11 October 2017, the Linux company SUSE made a song titled "Linus Said" about the origin of the Linux kernel.</p>
+          <p style="font-size: 25px; margin-bottom: 1px;font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif 4', serif;">Bibliography</p>
+          <hr style="margin-top: 1px;">
+          <p>
+            <ul style="padding-left: 20px;">
+              <li>Torvalds, Linus; Diamond, David (2001). Just for Fun: The Story of an Accidental Revolutionary. New York City, United States: HarperCollins. ISBN 0-06-662072-4</li>
+              <li style="font-size: 17px;">Himanen, Pekka (2001). The Hacker Ethic and the Spirit of the Information Age. Random House. ISBN 951-0-25417-7. Prologue: Linus Torvalds; Epilogue: Manuel Castells</li>
+              <li style="font-size: 17px;">Moody, Glyn: Rebel Code. Engl. the beginning of work: Rebel Code. Eng. Riikka Toivanen and Heikki Karjalainen. In January 2001. ISBN 951-31-2003-1.</li>
+              <li style="font-size: 17px;">Nikkanen, Tuula: The Linux story. Satku, 2000. ISBN 951-762-990-7.</li>
+            </ul>
+          </p>
+          <p style="font-size: 23px; margin-bottom: 1px;font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif 4', serif;">See also</p>
+          <hr style="margin-top: 1px;">
+          <p>
+            <ul style="padding-left: 20px;">
+              <li style="font-size: 17px;"><a href="">Linus's law</a></li>
+              <li style="font-size: 17px;"><a href="">Tanenbaum–Torvalds debate</a></li>
+              <li style="font-size: 17px;"><a href="">List of pioneers in computer science</a></li>
+            </ul>
+          </p>
+          <p style="font-size: 23px; margin-bottom: 1px;font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif 4', serif;">References</p>
+          <hr style="margin-top: 1px;">
+          
+            <ol style="padding-left: 20px;">
+              <li style="font-size: 17px;"> Corbet, Jonathan (13 September 2010). "Citizen Linus". Archived from the original on 25 June 2018. Retrieved 10 December 2024.</li>
+              <li style="font-size: 17px;"> "Linus Torvalds 2008 Fellow". Archived from the original on 9 July 2010.</li>
+              <li style="font-size: 17px;">"Linus Torvalds: Why Choose a Career in Linux and Open Source" on YouTube</li>
+              <li style="font-size: 17px;">"Technology Academy Finland – Stem cell pioneer and open source software engineer are 2012 Millennium Technology Prize laureates". Technologyacademy.fi. 19 April 2012. Archived from the original on 17 January 2014. Retrieved 24 April 2012.</li>
+              <li style="font-size: 17px;"> "Computer-Pioneer-Award". Archived from the original on 4 May 2014. Retrieved 5 May 2014.</li>
+              <li style="font-size: 17px;"> "List of IEEE Masaru Ibuka Consumer Electronics Award recipients". IEEE. 3 April 2017. Archived from the original on 28 March 2018.</li>
+              <li style="font-size: 17px;"> Torvalds</li>
+              <li style="font-size: 17px;"> Moody, Glyn (2002). Rebel Code: Linux and the Open Source Revolution. Perseus Books Group. p. 336. ISBN 0-7382-0670-9.</li>
+              <li style="font-size: 17px;"> Linus Torvalds, David Rusling (30 September 2016). LAS16-500K3: Fireside Chat with David Rusling and Linus Torvalds. Las Vegas: Linaro. Archived from the original on 14 October 2016. Retrieved 8 October 2016.</li>
+            </ol>
+      
+           <p style="font-size: 23px; margin-bottom: 1px;font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif 4', serif;">Further reading</p>
+          <hr style="margin-top: 1px;">
+          <p>
+            <ul style="padding-left: 20px;">
+              <li style="font-size: 17px;">Himanen, Pekka; Torvalds, Linus; Castells, Manuel (2001). The Hacker Ethic. Secker & Warburg. 
+                <a href="">ISBN 0-436-20550-5</a> 
+              </li>
+            </ul>
+          </p>
+          <p style="font-size: 23px; margin-bottom: 1px;font-family: 'Linux Libertine', 'Georgia', 'Times', 'Source Serif 4', serif;">External links</p>
+          <hr style="margin-top: 1px;">
+          <div>
+            <div>  
+
+              <div id="box3" style="border: 1px solid rgb(175, 173, 173); background-color: #f8f9fa;width: 250px;justify-items: center; float: right; clear: right;padding-top: 10px;padding-bottom: 10px;margin-left: 10px;">
+              <table>
+                <tr>
+                  <th>Linus Torvalds</th>
+                </tr>
+                <tr>
+                  <td>at Wikipedia's <a href="">sister projects</a> </td>
+                  
+                </tr>
+                <tr>
+                  <td><hr></td>
+                </tr>
+                <tr>
+                  <td><img style="width: 20px;height: 27px;vertical-align: middle;margin-right: 5px;" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/40px-Commons-logo.svg.png" alt="Media logo"> <a href="">Media</a> from Commons </td>
+                </tr>
+                <tr>
+                  <td><img style="width: 20px;height: 27px;vertical-align: middle;margin-right: 5px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/60px-Wikiquote-logo.svg.png"alt="Quotations logo"> <a href="">Quotations</a> from Wikiquote</td>
+                </tr>
+                <tr>
+                  <td><img style="width: 20px;height: 27px;vertical-align: middle;margin-right: 5px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/60px-Wikidata-logo.svg.png" alt="Data logo"> <a href="">Data</a> from Wikidata</td>
+                </tr>
+              </table> 
+            </div>
+
+              <ul style="font-size: 17px; padding-left: 20px;">
+                <li  style="font-size: 17px;">Jukka Paakki (2011). "Linus Torvalds". Biografiskt lexikon för Finland (in Swedish). Helsingfors: Svenska litteratursällskapet i Finland. urn:NBN:fi:sls-5464-1416928958070.</li>
+                <li style="font-size: 17px;">Linus' blog at Blogger (last post in 2011)</li>
+                <li style="font-size: 17px;">Linus Torvalds and His Five Entrepreneurial Lessons at AllBusiness.com</li>
+                <li style="font-size: 17px;">Young, Robert (March 1994). "Interview with Linus, the Author of Linux". Linux Journal (#1).</li>
+                <li style="font-size: 17px;">NPR Fresh Air episode</li>
+                <li style="font-size: 17px;">Ten years of NODES</li>
+                <li style="font-size: 17px;">Linus Torvalds: Linux succeeded thanks to selfishness and trust</li>
+                <li style="font-size: 17px;">No highs, no lows: Linus Torvalds on 25 years of Linux</li>
+              </ul>
+            </div>
+            
+          </div>
+
+          <div style="justify-self: center;">
+            <table border="1" style=" border-collapse: collapse; background-color: #f8f9fa;">
+              <tr>
+                <td style="text-align: center;padding: 10px;font-size: 15px;padding-right: 30px;padding-left: 30px;"> 
+                  Preceded by 
+                  <br> Michael Grätzel</td>
+                <td style="text-align: center;font-size: 15px;padding-left: 2px;padding-right: 2px;">Michael Grätzel Millennium Technology Prize winner 
+                  <br>
+                  2012</td>
+                <td style="text-align: center;padding: 10px;font-size: 15px;padding-right: 30px;padding-left: 30px;">Succeeded by 
+                  <br>
+                  Stuart Parkin</td>
+              </tr>
+            </table>
+          </div>
+          <div style="margin-top: 20px;">
+
+            <div>
+              <table border="1" style="width: 100%;font-size: 18px;border-spacing: 5px; border-color: rgb(175, 173, 173);">
+                <tr style="line-height: 1.5;border-color: transparent;background-color: #ccccff;">
+                  <th style="display: flex;justify-content: space-between;">
+                    <div style="font-size: 12px;display: inline;align-self: center; margin-left: 10px;">
+                      <a href="">V.T.E</a>
+                      
+                    </div>
+                    <a href="">Linux Kernel</a>
+                    <button style="background-color: transparent;border:none;align-self: center;">
+                      <span style="margin-right: 5px;">[
+                        <a href="">show</a>
+                        ]
+                      </span>
+                    </button>
+                  </th>
+                </tr>
+              </table>
+            </div>
+            <div>
+              <table border="1" style="width: 100%;font-size: 18px;border-spacing: 5px; border-color: rgb(175, 173, 173);border-top: none;">
+                <tr style="line-height: 1.5;border-color: transparent;background-color: #ccccff;">
+                  <th style="display: flex;justify-content: space-between;">
+                    <div style="font-size: 12px;display: inline;align-self: center; margin-left: 10px;">
+                      <a href="">V.T.E</a>
+                      
+                    </div>
+                    <a href="">Linux distributions</a>
+                    <button style="background-color: transparent;border:none;align-self: center;">
+                      <span style="margin-right: 5px;">[
+                        <a href="">show</a>
+                        ]
+                      </span>
+                    </button>
+                  </th>
+                </tr>
+              </table>
+            </div>
+            <div>
+              <table border="1" style="width: 100%;font-size: 18px;border-spacing: 5px; border-color: rgb(175, 173, 173);border-top: none;">
+                <tr style="line-height: 1.5;border-color: transparent;background-color: #ccccff;">
+                  <th style="display: flex;justify-content: space-between;">
+                    <div style="font-size: 12px;display: inline;align-self: center; margin-left: 10px;">
+                      <a href="">V.T.E</a>
+                      
+                    </div>
+                    <a href="">Contributors to the Linux operating system</a>
+                    <button style="background-color: transparent;border:none;align-self: center;">
+                      <span style="margin-right: 5px;">[
+                        <a href="">show</a>
+                        ]
+                      </span>
+                    </button>
+                  </th>
+                </tr>
+              </table>
+            </div>
+            <div>
+              <table border="1" style="width: 100%;font-size: 18px;border-spacing: 5px; border-color: rgb(175, 173, 173);border-top: none;">
+                <tr style="line-height: 1.5;border-color: transparent;background-color: #ccccff;">
+                  <th style="display: flex;justify-content: space-between;">
+                    <div style="font-size: 12px;display: inline;align-self: center; margin-left: 10px;">
+                      <a href="">V.T.E</a>
+                      
+                    </div>
+                    <a href="">Internet Hall of Fame</a>
+                    <button style="background-color: transparent;border:none;align-self: center;">
+                      <span style="margin-right: 5px;">[
+                        <a href="">show</a>
+                        ]
+                      </span>
+                    </button>
+                  </th>
+                </tr>
+              </table>
+            </div>
+            <div>
+              <table border="1" style="width: 100%;font-size: 18px;border-spacing: 5px; border-color: rgb(175, 173, 173);border-top: none;">
+                <tr style="line-height: 1.5;border-color: transparent;background-color: #ccccff;">
+                  <th style="display: flex;justify-content: space-between;">
+                    <div style="font-size: 12px;display: inline;align-self: center; margin-left: 10px;">
+                      <a href="">V.T.E</a>
+                      
+                    </div>
+                    <a href="">Authority control databases Edit this at Wikidata</a>
+                    <button style="background-color: transparent;border:none;align-self: center;">
+                      <span style="margin-right: 5px;">[
+                        <a href="">show</a>
+                        ]
+                      </span>
+                    </button>
+                  </th>
+                </tr>
+              </table>
+            </div>
+            <div>
+              <table border="1" style="border-collapse: collapse;width: 100%; border-color: rgb(175, 173, 173);border-top: none;">
+                <tr>
+                  <td style="text-align: center;">
+                    <a href="">Portals</a>:
+                    <br>
+                    <hr style="margin-top: 5px;margin-bottom: 5px;margin-left: 230px;margin-right: 230px;color: rgb(175, 173, 173);">
+                    <img style="width: 20px;vertical-align: middle;" src="https://upload.wikimedia.org/wikipedia/en/thumb/6/69/P_vip.svg/40px-P_vip.svg.png">
+                    Biography
+                    <img style="width: 20px;vertical-align: middle;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/NewTux.svg/40px-NewTux.svg.png">
+                    Linux
+
+                  </td>
+                </tr>
+              </table>
+            </div>
+          <p>
+            <div style="border: 1px solid black; padding: 10px;font-size: 20px; text-align: left;background-color: #f8f9fa; border-color: rgb(175, 173, 173);">
+              <a href="" style="text-decoration: none;">Categories: Linus Torvalds | 1969 births | Living people | Academic staff of the University of Helsinki | American agnostics | American atheists | American male bloggers | American bloggers | American computer programmers | American software engineers | Critics of religions | Finnish agnostics | Finnish atheists | Finnish male bloggers | Finnish computer programmers | Finnish emigrants to the United States | Free software programmers | Linux kernel programmers | Linux people | Open source people | People from Dunthorpe, Oregon | People in information technology | Swedish-speaking Finns | University of Helsinki alumni | Writers from Helsinki | Open source advocates | Finnish software engineers | Torvalds family | Naturalized citizens of the United States | Linux Foundation fellows</a>
+            </div>
+          </p>
+
+       </div>
+    </main>
+    <footer style="margin-top: 50px;margin-bottom: 100px;">
+      <hr>
+      <p>
+        This page was last edited on 18 March 2026, at 16:57 (UTC).
+      </p>
+      <p>Text is available under the Creative Commons Attribution-ShareAlike 4.0 License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization</p>
+
+      <ul id="footer-links" style="padding: 0;">
+        <li><a href="" >Privacy policy</a></li>
+        <li><a href="">About Wikipedia</a></li>
+        <li><a href="">Disclaimers</a></li>
+        <li><a href="">Contact Wikipedia</a></li>
+        <li><a href="">Legal & safety contacts</a></li>
+        <li><a href="">Code of Conduct</a></li>
+        <li><a href="">Developers</a></li>
+        <li><a href="">Statistics</a></li>
+        <li><a href="">Cookie statement</a></li>
+        <li><a href="">Mobile view</a></li>
+      </ul>
+
+      <ul style="float: right;">
+        <li style="list-style: none;float: left;line-height: 2;margin-left: 0.5em;border: 1px solid rgb(175, 173, 173);margin-right: 5px;">
+          <picture>
+            <source media="(min-width: 500px)" srcset="https://en.wikipedia.org/static/images/footer/wikimedia-button.svg" width="84" height="29">
+            <img style="vertical-align: middle;padding-top:8px;padding-bottom:8px;padding-left: 8px;padding-right: 8px;" src=https://en.wikipedia.org/static/images/footer/wikimedia-button.svg width="25" height="25" alt="Wikimedia Foundation" lang="en" loading="lazy">
+          </picture>
+        </li>
+        <li style="list-style: none;float: left;line-height: 2;margin-left: 0.5em;">
+          <picture>
+            <source media="(min-width: 500px)" srcset="https://en.wikipedia.org/w/resources/assets/poweredby_mediawiki.svg" width="88" height="31">
+            <img style="vertical-align: middle;padding-top:8px;padding-bottom:8px;padding-left: 8px;padding-right: 8px;border: 1px solid rgb(175, 173, 173)" src="https://en.wikipedia.org/w/resources/assets/poweredby_mediawiki.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy">
+          </picture>
+        </li>
+      </ul>
+    </footer>
+    
+  </body>
+</html>

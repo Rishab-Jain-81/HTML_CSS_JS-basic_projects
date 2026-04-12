@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="menu-logo"
+        src="./assets/CSS_Project_Logo-final.png"
+        alt="FocusFlow Logo"
+      />
+      <span class="heading">Dashboard</span>
+      <span class="search">
+        <input type="text" placeholder="Search" class="search-bar" />
+        <button class="search-btn" aria-label="search-button">
+          <img
+            src="./assets/icons8-search-30.png"
+            alt="search logo"
+            class="search-logo"
+          />
+        </button>
+      </span>
+      <button class="pfp-btn" aria-label="profile-button">
+        <img src="./assets/user.png" alt="Profile  Logo" class="pf-logo" />
+      </button>
+    </header>
+    <main class="hero" id="hero">
+      <button class="menu-btn" aria-label="menu-button">☰</button>
+      <div class="hero-page">
+        <aside class="menu">
+          <nav class="navbar">
+            <ul class="menu-ul">
+              <li class="menu-items">
+                <a href="#hero" class="menu-link">Dashboard</a>
+              </li>
+              <li class="menu-items">
+                <a href="#analytics" class="menu-link">Analytics</a>
+              </li>
+              <li class="menu-items">
+                <a href="#tasks" class="menu-link">Tasks</a>
+              </li>
+              <li class="menu-items menu-items-sp">
+                <a href="#settings" class="menu-link">Settings</a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+
+        <div class="cards-container">
+          <div class="cards">
+            <span class="icon">⏱️</span>
+            <span class="card-heading">Study Hours</span>
+            <span class="card-val">5.2 hrs</span>
+            <p class="card-desc">+1.3 hrs today</p>
+          </div>
+          <div class="cards">
+            <span class="icon">📊</span>
+            <span class="card-heading">Focus Sessions</span>
+            <span class="card-val">8</span>
+            <p class="card-desc">2 sessions left today</p>
+          </div>
+          <div class="cards">
+            <span class="icon">🎯</span>
+            <span class="card-heading">Productivity Score</span>
+            <span class="card-val">82%</span>
+            <p class="card-desc"><span class="green">↑</span>6% this week</p>
+          </div>
+          <div class="cards">
+            <span class="icon">✅</span>
+            <span class="card-heading">Tasks Completed</span>
+            <span class="card-val">12</span>
+            <p class="card-desc">3 pending</p>
+          </div>
+        </div>
+      </div>
+      <section id="analytics">
+        <div class="progress-heading">Weekly Progress</div>
+        <div class="progress">
+          <div class="bar-graph mon">2 hr</div>
+          <div class="bar-graph tue">3 hr</div>
+          <div class="bar-graph wed">4 hr</div>
+          <div class="bar-graph thu">2.5 hr</div>
+          <div class="bar-graph fri">5 hr</div>
+          <div class="bar-graph sat">3.5 hr</div>
+          <div class="bar-graph sun">1 hr</div>
+        </div>
+        <div class="progress-desc">
+          <span class="bar-desk">Mon</span>
+          <span class="bar-desk">Tue</span>
+          <span class="bar-desk">Wed</span>
+          <span class="bar-desk">Thu</span>
+          <span class="bar-desk">Fri</span>
+          <span class="bar-desk">Sat</span>
+          <span class="bar-desk">Sun</span>
+        </div>
+        <div class="progress-summary">
+          You studied 21 hours this week. Great consistency!
+        </div>
+      </section>
+      <section id="tasks">
+        <div class="task-heading">Tasks</div>
+        <div class="checklists">
+          <ul class="tasks">
+            <li class="checkboxes">
+              <label><input type="checkbox" /></label>Complete CSS Grid practice
+            </li>
+            <li class="checkboxes">
+              <label><input type="checkbox" /></label> Revise Flexbox concepts
+            </li>
+            <li class="checkboxes">
+              <label><input type="checkbox" /></label> Build Dashboard UI
+            </li>
+            <li class="checkboxes">
+              <label><input type="checkbox" /></label> Watch JS basics (30 min)
+            </li>
+            <li class="checkboxes">
+              <label><input type="checkbox" /></label> Practice 2 coding
+              problems
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const menu_btn = document.querySelector(".menu-btn");
+      const menu = document.querySelector(".menu");
+      menu_btn.addEventListener("click", () => {
+        menu.classList.toggle("active");
+        menu_btn.classList.toggle("hidden");
+        menu_btn.innerHTML = menu_btn.innerHTML == "☰" ? "✖" : "☰";
+      });
+
+      const body = document.querySelector("body");
+      const pfp_btn = document.querySelector(".pfp-btn");
+      pfp_btn.addEventListener("click", (e) => {
+        body.classList.toggle("light");
+      });
+    </script>
+  </body>
+</html>
