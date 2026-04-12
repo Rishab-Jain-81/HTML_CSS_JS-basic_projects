@@ -131,7 +131,7 @@ function handleSearch() {
     if (task.text.toLowerCase().includes(searchText)) {
       const div = document.createElement("div");
       div.classList.add("search-result");
-      div.textContent = `Found: ${task.text}`;
+      div.innerHTML = `<span class="search-result">Found: ${task.text}</span>`;
       searched.appendChild(div);
       found = true;
     }
