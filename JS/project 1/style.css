@@ -266,19 +266,16 @@ input[type="checkbox"] {
   margin-right: 10px;
 }
 .recently-added-container {
-  color: var(--text);
   width: 70vw;
   margin: 10px auto 0px auto;
   display: flex;
   flex-direction: column;
   gap: 15px;
-}
-
-.recently-added {
   color: var(--text-muted);
   font-size: 15px;
   padding: 5px 0px 0px 5px;
 }
+
 .search-result {
   width: 70vw;
   margin: 10px auto 0px auto;
