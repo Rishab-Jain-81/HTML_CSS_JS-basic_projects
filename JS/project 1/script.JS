@@ -44,7 +44,7 @@ function addTask(text) {
 }
 function handleAddTask() {
   const addedCon = document.querySelector(".recently-added-container");
-  addedCon.innerHTML = "Recently added task:";
+  addedCon.textContent = "";
   const addTsk = document.querySelector(".addTsk");
   const taskText = addTsk.value;
   addTsk.value = "";
@@ -91,7 +91,12 @@ function searchTask() {
       return task.text.toLowerCase().includes(searchText);
     });
     if (filteredSearch.length > 0) {
-      searched.innerHTML = "result: " + filteredSearch;
+      searched.innerHTML = "";
+      filteredSearch.forEach((task) => {
+        const p = document.createElement("p");
+        p.innerHTML = "result: " + task.text;
+        searched.appendChild(p);
+      });
     } else {
       searched.innerHTML = "No tasks found!";
     }
