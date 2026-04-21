@@ -1,5 +1,4 @@
 let tasks = [];
-
 function saveTasks() {
   localStorage.setItem("tasks", JSON.stringify(tasks));
 }
@@ -14,22 +13,32 @@ function loadTasks() {
 function renderTasks() {
   const taskList = document.querySelector(".task-list");
   taskList.innerHTML = "";
+  if (tasks.length === 0) {
+    taskList.innerHTML = `<p class="empty-state">No tasks yet. Add one!</p>`;
+    updateTaskCount();
+    return;
+  }
   tasks.forEach((task, index) => {
     const li = document.createElement("li");
     li.classList.add("task-li");
     li.innerHTML = `
         <div> 
-        <input  type="checkbox" data-index="${index}"${task.completed ? " checked" : ""}"/>
-        <span class="${task.completed ? "completed" : ""}">${task.text}</span>
-        <button class="delete-btn" data-index="${index}">❌</button>
-        </div>`;
+        <input type="checkbox" data-id="${task.id}"  ${task.completed ? " checked" : ""} />
+        <span class="${task.completed ? "completed" : ""}"> ${task.text} </span>
+        </div>
+        <button class="delete-btn" data-id="${task.id}">❌</button>
+        `;
     taskList.appendChild(li);
   });
   updateTaskCount();
 }
 function addTask(text) {
   if (!text.trim()) return;
-  tasks.push({ text, completed: false });
+  tasks.push({
+    id: Date.now(),
+    text: text,
+    completed: false,
+  });
   saveTasks();
   renderTasks();
 }
@@ -47,8 +56,8 @@ function handleAddTask() {
   }
   addTask(taskText);
 }
-function deleteTask(index) {
-  tasks.splice(index, 1);
+function deleteTask(id) {
+  tasks = tasks.filter((task) => task.id !== id);
   saveTasks();
   renderTasks();
 }
@@ -57,8 +66,13 @@ function clearTasks() {
   saveTasks();
   renderTasks();
 }
-function toggleTask(index) {
-  tasks[index].completed = !tasks[index].completed;
+function toggleTask(id) {
+  const task = tasks.find((t) => t.id === id);
+
+  if (task) {
+    task.completed = !task.completed;
+  }
+
   saveTasks();
   renderTasks();
 }
@@ -97,13 +111,12 @@ addTsk.addEventListener("keydown", (e) => {
 });
 const taskList = document.querySelector(".task-list");
 taskList.addEventListener("click", (e) => {
-  const index = e.target.dataset.index;
-
+  const id = Number(e.target.dataset.id);
   if (e.target.classList.contains("delete-btn")) {
-    deleteTask(index);
+    deleteTask(id);
   }
   if (e.target.type === "checkbox") {
-    toggleTask(index);
+    toggleTask(id);
   }
 });
 const clearBtn = document.querySelector(".clear-btn");
@@ -118,3 +131,18 @@ Searchbox.addEventListener("keydown", (e) => {
 });
 loadTasks();
 renderTasks();
+
+const darkBtn = document.querySelector(".drmd-btn");
+darkBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+  const logo = document.querySelector(".logo");
+  if (document.body.classList.contains("dark")) {
+    logo.src = "./assets/Logo-dark.png";
+    darkBtn.innerHTML =
+      '<img src="./assets/white-balance.png" alt="light-mode-icon" class="drmd-img"/>';
+  } else {
+    logo.src = "./assets/Logo.png";
+    darkBtn.innerHTML =
+      '<img src="./assets/night-mode (1).png" alt="night-mode-icon" class="drmd-img"/>';
+  }
+});
