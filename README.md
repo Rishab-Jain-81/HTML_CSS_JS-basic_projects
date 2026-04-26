@@ -15,4 +15,4 @@ I recently learned HTML, CSS, and JavaScript through YouTube and MDN documentati
 - Developed a functional task manager
 - Implemented features like **localStorage** for data persistence and a **dark mode toggle**
 - Developed a functional Notes App
-- - Implemented features like **localStorage** for data persistence and **editable Notes**
+- Implemented features like **localStorage** for data persistence and **editable Notes**
