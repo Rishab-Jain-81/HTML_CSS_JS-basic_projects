@@ -9,10 +9,10 @@ I recently learned HTML, CSS, and JavaScript through YouTube and MDN documentati
 
 ## CSS Project
 - Built a landing page for a fictional startup called **Focus Flow**
-- Practiced Flexbox and basic responsive design techniques
+- - Practiced Flexbox and basic responsive design techniques
 
 ## JavaScript Project
 - Developed a functional task manager
 - Implemented features like **localStorage** for data persistence and a **dark mode toggle**
 - Developed a functional Notes App
-- Implemented features like **localStorage** for data persistence and **editable Notes**
+- - Implemented features like **localStorage** for data persistence and **editable Notes**
