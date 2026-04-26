@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>MyNotes</title>
+    <link rel="stylesheet" href="./style.css" >
+  </head>
+  <body>
+    <div class="main">
+      <header class="header">
+        <h1 class="heading">Let's Note</h1>
+        <h4 class="subheading">Capture your ideas easily</h4>
+      </header>
+      <section class="addNote">
+        <h2 class="addHeading">Add a New Note</h2>
+        <div class="textboxCon">
+          <input type="text" class="headingText" placeholder="Your Title">
+          <textarea name="addNewNote" id="addNewNote" title="Write your Note" class="newNote" placeholder="Start Writing..."></textarea>
+          <label for="addNewNote"></label>
+          <button class="addBtn" title="add note" aria-label="add note">+</button>
+        </div>
+      </section>
+      <section class="notesSection">̥
+        <h2 class="notesConHeading">My Notes</h2>
+        <div class="notesContainer"></div>
+      </section>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
